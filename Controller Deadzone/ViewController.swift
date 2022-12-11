@@ -26,27 +26,35 @@ class ViewController: UIViewController {
                 controller.extendedGamepad?.valueChangedHandler = { (gamepad: GCExtendedGamepad, element: GCControllerElement) in
                     if element == gamepad.leftThumbstick {
                         if gamepad.leftThumbstick.xAxis.value >= 0 {
+                            print(gamepad.leftThumbstick.xAxis.value)
                             //Add your function for the right direction
                         } else if gamepad.leftThumbstick.xAxis.value <= 0 {
+                            print(gamepad.leftThumbstick.xAxis.value)
                             //Add your function for the left direction
                         }
                         
                         if gamepad.leftThumbstick.yAxis.value >= 0 {
+                            print(gamepad.leftThumbstick.yAxis.value)
                             //Add your function for the up direction
                         } else if gamepad.leftThumbstick.yAxis.value <= 0 {
+                            print(gamepad.leftThumbstick.yAxis.value)
                             //Add your function for the down direction
                         }
                         
                     } else if element == gamepad.rightThumbstick {
                         if gamepad.rightThumbstick.xAxis.value >= 0 {
+                            print(gamepad.rightThumbstick.xAxis.value)
                             //Add your function for the right direction
                         } else if gamepad.rightThumbstick.xAxis.value <= 0 {
+                            print(gamepad.rightThumbstick.xAxis.value)
                             //Add your function for the left direction
                         }
                         
                         if gamepad.rightThumbstick.yAxis.value >= 0 {
+                            print(gamepad.rightThumbstick.yAxis.value)
                             //Add your function for the up direction
                         } else if gamepad.rightThumbstick.yAxis.value <= 0 {
+                            print(gamepad.rightThumbstick.yAxis.value)
                             //Add your function for the down direction
                         }
                     }

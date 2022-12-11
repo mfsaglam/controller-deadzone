@@ -1,3 +1,4 @@
+![Logo](https://github.com/mfsaglam/controller-deadzone/blob/main/Resources/icon.png)
 
 # Controller Deadzone
 

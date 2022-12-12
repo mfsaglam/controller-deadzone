@@ -22,6 +22,14 @@ class ViewController: UIViewController {
         // Use the controller object to read input from the game controller.
         
         if let gamepad = controller.extendedGamepad {
+            
+            // Update light settings
+            if #available(iOS 14.0, *) {
+                gamepad.controller?.light?.color = .init(red: 0, green: 0, blue: 0)
+            } else {
+                // Fallback on earlier versions
+            }
+            
             if gamepad.valueChangedHandler == nil {
                 controller.extendedGamepad?.valueChangedHandler = { (gamepad: GCExtendedGamepad, element: GCControllerElement) in
                     if element == gamepad.leftThumbstick {

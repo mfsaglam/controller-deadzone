@@ -32,7 +32,9 @@ class ThumbsticksViewController: UIViewController {
             
             if gamepad.valueChangedHandler == nil {
                 controller.extendedGamepad?.valueChangedHandler = { (gamepad: GCExtendedGamepad, element: GCControllerElement) in
-                    if element == gamepad.leftThumbstick {
+                    switch element {
+                    case gamepad.leftThumbstick:
+                        
                         if gamepad.leftThumbstick.xAxis.value >= 0 {
                             print(gamepad.leftThumbstick.xAxis.value)
                             //Add your function for the right direction
@@ -48,8 +50,8 @@ class ThumbsticksViewController: UIViewController {
                             print(gamepad.leftThumbstick.yAxis.value)
                             //Add your function for the down direction
                         }
+                    case gamepad.rightThumbstick:
                         
-                    } else if element == gamepad.rightThumbstick {
                         if gamepad.rightThumbstick.xAxis.value >= 0 {
                             print(gamepad.rightThumbstick.xAxis.value)
                             //Add your function for the right direction
@@ -65,6 +67,9 @@ class ThumbsticksViewController: UIViewController {
                             print(gamepad.rightThumbstick.yAxis.value)
                             //Add your function for the down direction
                         }
+                        
+                    default:
+                        return
                     }
                 }
             }

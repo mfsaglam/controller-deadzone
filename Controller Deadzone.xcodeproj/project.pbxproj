@@ -105,9 +105,9 @@
 			children = (
 				1270BF8629451C3B00F4E140 /* AppDelegate.swift */,
 				1270BF8829451C3B00F4E140 /* SceneDelegate.swift */,
-				1270BF8A29451C3B00F4E140 /* ThumbsticksViewController.swift */,
-				12BA131029465D75009E12AD /* NoiticationCenter+Ext.swift */,
-				12BA130E29465D58009E12AD /* NotificationCenterProtocol.swift */,
+				12D20B7B29471D8000C7A98A /* ViewControllers */,
+				12D20B7929471D5D00C7A98A /* Extensions */,
+				12D20B7A29471D6800C7A98A /* Protocols */,
 				1270BF8C29451C3B00F4E140 /* Main.storyboard */,
 				1270BF8F29451C3C00F4E140 /* Assets.xcassets */,
 				1270BF9129451C3C00F4E140 /* LaunchScreen.storyboard */,
@@ -131,6 +131,30 @@
 				1270BFA929451C3C00F4E140 /* Controller_DeadzoneUITestsLaunchTests.swift */,
 			);
 			path = "Controller DeadzoneUITests";
+			sourceTree = "<group>";
+		};
+		12D20B7929471D5D00C7A98A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				12BA131029465D75009E12AD /* NoiticationCenter+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		12D20B7A29471D6800C7A98A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				12BA130E29465D58009E12AD /* NotificationCenterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		12D20B7B29471D8000C7A98A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1270BF8A29451C3B00F4E140 /* ThumbsticksViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

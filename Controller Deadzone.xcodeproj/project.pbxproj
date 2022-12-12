@@ -103,14 +103,10 @@
 		1270BF8529451C3B00F4E140 /* Controller Deadzone */ = {
 			isa = PBXGroup;
 			children = (
-				1270BF8629451C3B00F4E140 /* AppDelegate.swift */,
-				1270BF8829451C3B00F4E140 /* SceneDelegate.swift */,
 				12D20B7B29471D8000C7A98A /* ViewControllers */,
-				12D20B7929471D5D00C7A98A /* Extensions */,
 				12D20B7A29471D6800C7A98A /* Protocols */,
-				1270BF8C29451C3B00F4E140 /* Main.storyboard */,
-				1270BF8F29451C3C00F4E140 /* Assets.xcassets */,
-				1270BF9129451C3C00F4E140 /* LaunchScreen.storyboard */,
+				12D20B7929471D5D00C7A98A /* Extensions */,
+				12D20B7C29471E5000C7A98A /* Support */,
 				1270BF9429451C3C00F4E140 /* Info.plist */,
 			);
 			path = "Controller Deadzone";
@@ -152,9 +148,21 @@
 		12D20B7B29471D8000C7A98A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1270BF9129451C3C00F4E140 /* LaunchScreen.storyboard */,
+				1270BF8C29451C3B00F4E140 /* Main.storyboard */,
 				1270BF8A29451C3B00F4E140 /* ThumbsticksViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		12D20B7C29471E5000C7A98A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1270BF8629451C3B00F4E140 /* AppDelegate.swift */,
+				1270BF8829451C3B00F4E140 /* SceneDelegate.swift */,
+				1270BF8F29451C3C00F4E140 /* Assets.xcassets */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

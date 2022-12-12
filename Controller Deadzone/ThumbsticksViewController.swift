@@ -8,7 +8,7 @@
 import UIKit
 import GameController
 
-class ViewController: UIViewController {
+class ThumbsticksViewController: UIViewController {
     
     var notificationCenter: NotificationCenterProtocol = NotificationCenter.default
 

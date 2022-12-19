@@ -12,10 +12,13 @@ class ThumbsticksViewController: UIViewController {
     
     var notificationCenter: NotificationCenterProtocol = NotificationCenter.default
     var gamepad: GCExtendedGamepad?
+    
+    var thumbstick = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         addControllerObserver()
+        configureUI()
     }
     
     @objc private func handleControllerDidConnect(notification: Notification) {
@@ -83,6 +86,20 @@ class ThumbsticksViewController: UIViewController {
     
     private func addControllerObserver() {
         notificationCenter.addObserver(self, selector: #selector(handleControllerDidConnect), name: .GCControllerDidConnect, object: nil)
+    }
+    
+    private func configureUI() {
+        view.addSubview(thumbstick)
+        thumbstick.backgroundColor = .lightGray
+        thumbstick.layer.cornerRadius = 25
+        thumbstick.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            thumbstick.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            thumbstick.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            thumbstick.heightAnchor.constraint(equalToConstant: 50),
+            thumbstick.widthAnchor.constraint(equalToConstant: 50)
+        ])
     }
 
 }

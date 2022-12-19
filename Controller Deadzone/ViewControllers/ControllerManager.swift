@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class ControllerManager {
+    
+    func checkIfThereIsConnectedController() -> Bool {
+        return false
+    }
+    
+}

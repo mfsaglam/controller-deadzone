@@ -17,6 +17,7 @@
 		1270BFA829451C3C00F4E140 /* Controller_DeadzoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1270BFA729451C3C00F4E140 /* Controller_DeadzoneUITests.swift */; };
 		1270BFAA29451C3C00F4E140 /* Controller_DeadzoneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1270BFA929451C3C00F4E140 /* Controller_DeadzoneUITestsLaunchTests.swift */; };
 		12A167522950C6AD00F350F2 /* ControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A167512950C6AD00F350F2 /* ControllerManager.swift */; };
+		12A167542950C71A00F350F2 /* ControllerManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A167532950C71A00F350F2 /* ControllerManagerTests.swift */; };
 		12BA130F29465D58009E12AD /* NotificationCenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BA130E29465D58009E12AD /* NotificationCenterProtocol.swift */; };
 		12BA131129465D75009E12AD /* NoiticationCenter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BA131029465D75009E12AD /* NoiticationCenter+Ext.swift */; };
 		12D20B7E2947331A00C7A98A /* CustomizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D20B7D2947331A00C7A98A /* CustomizationViewController.swift */; };
@@ -54,6 +55,7 @@
 		1270BFA729451C3C00F4E140 /* Controller_DeadzoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller_DeadzoneUITests.swift; sourceTree = "<group>"; };
 		1270BFA929451C3C00F4E140 /* Controller_DeadzoneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller_DeadzoneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		12A167512950C6AD00F350F2 /* ControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerManager.swift; sourceTree = "<group>"; };
+		12A167532950C71A00F350F2 /* ControllerManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerManagerTests.swift; sourceTree = "<group>"; };
 		12BA130E29465D58009E12AD /* NotificationCenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterProtocol.swift; sourceTree = "<group>"; };
 		12BA131029465D75009E12AD /* NoiticationCenter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoiticationCenter+Ext.swift"; sourceTree = "<group>"; };
 		12D20B7D2947331A00C7A98A /* CustomizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizationViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				1270BF9D29451C3C00F4E140 /* Controller_DeadzoneTests.swift */,
+				12A167532950C71A00F350F2 /* ControllerManagerTests.swift */,
 			);
 			path = "Controller DeadzoneTests";
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1270BF9E29451C3C00F4E140 /* Controller_DeadzoneTests.swift in Sources */,
+				12A167542950C71A00F350F2 /* ControllerManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,16 +6,14 @@
 //
 
 import XCTest
-@testable import Controller_Deadzone
+import Controller_Deadzone
 
 final class ControllerManagerTests: XCTestCase {
     
     func test_checkIfThereIsConnectedController_returnsFalseIfThereIsNoConnectedController() {
         let sut = ControllerManager()
         
-        let isConnected = sut.checkIfThereIsConnectedController()
-        
-        XCTAssertFalse(isConnected)
+        XCTAssertEqual(sut.connectedControllers.count, 0)
     }
 
 }

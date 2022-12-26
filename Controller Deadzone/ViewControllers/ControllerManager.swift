@@ -7,10 +7,10 @@
 
 import Foundation
 
-class ControllerManager {
+public class ControllerManager {
     
-    func checkIfThereIsConnectedController() -> Bool {
-        return false
-    }
+    public let connectedControllers = [String]()
+    
+    public init() { }
     
 }

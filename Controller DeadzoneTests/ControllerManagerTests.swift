@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import GameController
 @testable import Controller_Deadzone
 
 final class ControllerManagerTests: XCTestCase {
